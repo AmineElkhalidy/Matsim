@@ -100,7 +100,9 @@
         </div>
 
         <!-- DESKTOP NAVBAR -->
-        <ul class="flex text-white font-medium space-x-8 items-center">
+        <ul
+          class="hidden md:flex text-white font-medium space-x-8 items-center"
+        >
           <li>
             <a href="#" class="">O NAS</a>
           </li>
@@ -140,7 +142,42 @@
     </header>
 
     <!-- MAIN -->
-    <main class=""></main>
+    <main class="overflow-hidden">
+      <!-- HERO -->
+      <section
+        class="w-full h-screen bg-[url('./assets/images/header-bg.png')] bg-cover bg-no-repeat"
+        id="hero"
+      >
+        <!-- CONTAINER -->
+        <div
+          class="max-w-6xl mx-auto w-full h-full flex justify-start items-center px-6"
+        >
+          <!-- DATA CONTAINER -->
+          <div class="">
+            <h1
+              class="text-[36px] font-semibold text-white md:text-[50px] leading-[46px] mb-8 md:mb-10"
+            >
+              Automatyzacja i robotyzacja
+            </h1>
+
+            <p
+              class="text-[20px] leading-[30px] text-white mb-8 md:text-[40px] md:mb-12"
+            >
+              Pomagamy automatyzować procesy produkcyjne
+            </p>
+
+            <div class="w-full text-center md:text-right">
+              <a
+                class="py-4 px-8 bg-titleColor text-white font-medium duration-300 cursor-pointer"
+                >Nasza oferta</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="max-w-6xl"></section>
+    </main>
 
     <!-- FOOTER -->
     <footer class=""></footer>
