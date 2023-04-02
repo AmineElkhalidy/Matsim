@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matsim | Automatyzacja Produkcji</title>
+
+    <!-- POPPINS FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.png"
+      type="image/x-icon"
+    />
+    <style>
+      @media screen and (max-width: 768px) {
+        .nav__menu {
+          position: fixed;
+          top: -100%;
+          right: 1rem;
+          width: 250px;
+          padding: 1rem 0 0;
+          text-align: center;
+          background-color: white;
+          transition: 0.4s;
+          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+          z-index: var(--z-fixed);
+        }
+      }
+
+      .show-menu {
+        top: 8rem;
+      }
+    </style>
+
+    <!-- TAILWINDCSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              main: "#4CA638",
+              titleColor: "#fb770c",
+              textColor: "#777",
+            },
+            fontFamily: {
+              sans: ["Poppins", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-sans text-textColor">
+    <!-- HEADER -->
+    <header class="w-full bg-main">
+      <nav
+        class="h-28 flex items-center justify-between max-w-6xl mx-auto px-6"
+      >
+        <a href="index.html">
+          <img src="./assets/images/Logo.png" alt="Logo" />
+        </a>
+
+        <div class="nav__menu md:hidden" id="nav-menu">
+          <ul class="flex flex-col w-full pl-3">
+            <li
+              class="border-b border-gray-300 w-full pb-2 text-left text-black font-medium"
+            >
+              <a href="#" class="nav__link">O NAS</a>
+            </li>
+            <li
+              class="border-b border-gray-300 w-full py-2 text-left text-black font-medium"
+            >
+              <a href="#" class="nav__link">OFERTA</a>
+            </li>
+            <li
+              class="border-b border-gray-300 w-full py-2 text-left text-black font-medium"
+            >
+              <a href="#" class="nav__link">PROJEKTY UE</a>
+            </li>
+            <li
+              class="border-b border-gray-300 w-full py-2 text-left text-black font-medium"
+            >
+              <a href="#" class="nav__link">KONTAKT</a>
+            </li>
+            <li class="py-2">
+              <a href="#" class="">
+                <img src="./assets/images/UE.png" alt="UE" />
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- DESKTOP NAVBAR -->
+        <ul class="flex text-white font-medium space-x-8 items-center">
+          <li>
+            <a href="#" class="">O NAS</a>
+          </li>
+          <li>
+            <a href="#" class="">OFERTA</a>
+          </li>
+          <li>
+            <a href="#" class="">PROJEKTY UE</a>
+          </li>
+          <li>
+            <a href="#" class="">KONTAKT</a>
+          </li>
+          <li>
+            <a href="#" class="">
+              <img src="./assets/images/UE.png" alt="UE" />
+            </a>
+          </li>
+        </ul>
+
+        <div class="md:hidden" id="nav-toggle">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-10 h-10 text-gray-200 cursor-pointer"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </div>
+      </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main class=""></main>
+
+    <!-- FOOTER -->
+    <footer class=""></footer>
+
+    <!-- SCRIPTS -->
+    <script src="./assets/scripts/main.js"></script>
+  </body>
+</html>
